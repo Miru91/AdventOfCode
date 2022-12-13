@@ -38,5 +38,4 @@ print(result)
 data.close()
 orders.close()
 
-#VPCDMSLW
-#GHQSWPVM
+#VPCDMSLWJ
