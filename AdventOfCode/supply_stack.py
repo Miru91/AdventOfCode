@@ -16,16 +16,14 @@ for order in orders:
     von = globals()[f"stack_{int(order[3])}"]
     nach = globals()[f"stack_{int(order[5])}"]
 
+    h = move
+
     while i <= move:
         if len(von) > 0:
-            print("von" + str(von))
-            print("nach" + str(nach))
-            nach.append(von[len(von)-1])
-            von.pop()
-            print("von afterwards" + str(von))
-            print("nach afterwards" + str(nach))
+            #nach.append(von.pop(-1))
+            nach.append(von.pop(-h))
+        h -= 1
         i += 1
-
     i = 1
 
 while j <= count:
@@ -39,3 +37,4 @@ data.close()
 orders.close()
 
 #VPCDMSLWJ
+#TPWCGNCCG
